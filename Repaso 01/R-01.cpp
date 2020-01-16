@@ -22,6 +22,8 @@ int main(void)
     {
         cout << "Ingrese la palabra: ";
         cin >> saveLetter;
+        word[i] = saveLetter;
+
     }
 
     cout << "Tu palabra contiene   '" << size << "'   letras" << endl;
@@ -38,7 +40,7 @@ int main(void)
     {
         cout << "Turnos restantes  '" << a << "'  Digite una letra: ";
         cin >> letter;
-        if (hasLetter(saveLetter, word, aux, size) == true)
+        if (hasLetter(letter, word, aux, size) == true)
         {
             cout << "La palabra si contiene la letra " << letter << endl;
         }
